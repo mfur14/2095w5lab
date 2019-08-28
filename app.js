@@ -1,6 +1,6 @@
 let express = require('express'); // $npm install express
 let app = express();
-// let bodyParser = require('body-parser'); // $npm install body-parser // need to parse the html body content 
+// let bodyParser = require('body-parser'); // $npm install body-parser // need to parse the html body content // express already has body-parser so don't require to create an instance
 let db = []; // create database
 
 app.use(express.urlencoded({extended:false})); // express needs to know that we need body-parser
